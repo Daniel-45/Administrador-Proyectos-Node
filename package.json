@@ -1,0 +1,46 @@
+{
+    "name": "administrador-tareas",
+    "version": "1.0.0",
+    "description": "Proyecto administrador de tareas con Node MVC",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js",
+        "desarrollo": "concurrently \"npm run dev\" \"npm run watch\"",
+        "watch": "webpack --w --mode development",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Daniel Pompa Pareja",
+    "license": "GNU",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "bcrypt-nodejs": "0.0.3",
+        "concurrently": "^6.0.2",
+        "connect-flash": "^0.1.1",
+        "cookie-parser": "^1.4.5",
+        "dotenv": "^9.0.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
+        "express-validator": "^6.10.1",
+        "html-to-text": "^7.1.1",
+        "juice": "^7.0.0",
+        "mysql2": "^2.2.5",
+        "nodemailer": "^6.6.0",
+        "passport": "^0.4.1",
+        "passport-local": "^1.0.0",
+        "pug": "^3.0.2",
+        "sequelize": "^6.6.2",
+        "shortid": "^2.2.16",
+        "slug": "^4.0.4",
+        "sweetalert2": "^10.16.6"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/preset-env": "^7.3.1",
+        "babel-loader": "^8.0.5",
+        "nodemon": "^2.0.7",
+        "webpack": "^4.46.0",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.1.14"
+    }
+}

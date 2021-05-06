@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Node Directories/Files
+.nyc_output
+.lock-wscript
+.node_repl_history
+.npm
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# Environment variables file
+.env
+
+# Generic Files
+.DS_Store
+pids
+*.out
+*.pid
+*.seed
+*.swp
+*.swo
+
+### Visual Studio Code ###
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+### Visual Studio Code Patch ###
+# Ignore all local history of files
+.history
+.ionide

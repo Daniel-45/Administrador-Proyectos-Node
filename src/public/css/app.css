@@ -1,0 +1,396 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url("../fonts/Comfortaa.ttf");
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    min-height: 100vh;
+    font-size: 1rem;
+}
+
+/* Login */
+.login,
+.crear-cuenta {
+    background-color: #fafafa;
+}
+
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contenedor-formulario h1 {
+    text-align: center;
+}
+
+.contenedor-formulario h1 span {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.contenedor-formulario p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.caja-login {
+    background-color: #f5f5f5;
+    max-width: 650px;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 300px;
+    -webkit-box-shadow: 0px 25px 35px -17px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 0px 25px 35px -17px rgba(0, 0, 0, 0.56);
+    box-shadow: 0px 25px 35px -17px rgba(0, 0, 0, 0.56);
+    padding: 3rem;
+    border-radius: .2rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.campo label {
+    flex: 0 0 150px;
+    padding-right: 1rem;
+}
+
+.campo input[type="email"],
+.campo input[type="text"],
+.campo input[type="password"] {
+    height: 2.4rem;
+    border: 0;
+    flex: 1;
+    border: 1px solid #333;
+    border-radius: .2rem;
+    padding-left: 1rem;
+    color: #333;
+}
+
+.campo.acciones {
+    justify-content: space-between;
+}
+
+.campo.acciones a {
+    margin-top: 1rem;
+}
+
+.enviar {
+    justify-content: flex-end;
+}
+
+.boton {
+    background-color: #5cb85c;
+    text-align: center;
+    transition: background-color .5s ease-in-out;
+    padding: 1.4rem;
+    letter-spacing: 1px;
+    font-size: 1rem !important;
+    border: none;
+    font-weight: bold;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    border-radius: .2rem;
+}
+
+a.boton, input.boton {
+    color: #fff !important;
+}
+
+.boton span {
+    color: #fff;
+    font-size: 2.2rem;
+    margin-left: 2rem;
+}
+
+.boton.eliminar {
+    margin-top: 1rem;
+    float: right;
+    background-color: #d82c2c !important;
+    color: #fff;
+}
+
+.campo a {
+    color: #000;
+    text-decoration: none;
+}
+
+p.texto-restablecer {
+    color: #000;
+}
+
+body.index {
+    height: 100vh;
+}
+
+/* Menú */
+.menu {
+    background-color: #212121;
+    padding: 2rem;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Sidebar */
+.contenedor-proyectos {
+    height: 100%;
+    max-width: 400px;
+    background-color: #333;
+    padding-top: 1rem;
+}
+
+.panel {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.panel a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.panel h2 {
+    color: #5cb85c;
+    font-weight: 900;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.crear-proyecto i {
+    margin-left: 1rem;
+}
+
+.crear-proyecto a {
+    color: #455a64;
+}
+
+.lista-proyectos ul {
+    list-style: none;
+    padding: 1.5rem 0 0 0;
+    margin: 0;
+}
+
+.lista-proyectos ul li {
+    margin-bottom: 1rem;
+}
+
+.lista-proyectos ul li a:hover {
+    color: #69f0ae;
+}
+
+/* Contenido Principal */
+.contenedor {
+    display: flex;
+    height: calc(100vh - 6rem);
+}
+
+.contenido-principal {
+    flex: 1;
+    padding: 1rem;
+    overflow: scroll;
+}
+
+.contenido-principal h1,
+.contenido-principal h2 {
+    text-align: center;
+}
+
+.contenido-principal h2 {
+    margin-top: 2rem;
+}
+
+.contenido-principal h1 span {
+    font-weight: 400;
+}
+
+
+/* Listado Pendientes */
+.listado-pendientes {
+    background-color: #f2f2f2;
+    max-width: 800px;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    padding: 0.5rem 2rem;
+    border-radius: .2rem;
+}
+
+.listado-pendientes ul {
+    padding: 0;
+    list-style: none;
+}
+
+.listado-pendientes ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.listado-pendientes ul li:last-of-type {
+    border-bottom: none;
+}
+
+.listado-pendientes ul li i {
+    cursor: pointer;
+}
+
+.acciones i:last-child {
+    margin-left: 3rem;
+}
+
+.completo {
+    color: #00B762;
+}
+
+.alerta {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 900;
+    max-width: 650px;
+    margin: 0 auto 1rem auto;
+    border-radius: .2rem;
+}
+
+.error {
+    color: #d50000 !important;
+    background-color: rgb(255, 201, 201);
+}
+
+.error p {
+    color: #d50000!important;
+}
+
+.correcto {
+    color: #007000;
+    background-color: rgb(201, 245, 201);
+}
+
+p.correcto {
+    color: #007000;
+}
+
+/* Progreso del proyecto */
+.barra-progreso {
+    height: 30px;
+    border: 1px solid #5cb85c;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: .2rem;
+}
+
+.porcentaje {
+    width: 0%;
+    height: 100%;
+    background-color: #5cb85c;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+    transition: width .3s ease;
+}
+
+/* Formulario Proyectos/Tareas */
+form.agregar-proyecto, form.agregar-tarea {
+    max-width: 800px;
+    width: 90%;
+    background-color: #333;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: .3rem;
+}
+
+form.agregar-proyecto label,
+form.agregar-proyecto input,
+form.agregar-tarea label,
+form.agregar-tarea input {
+    display: block;
+    font-size: 1rem;
+}
+
+form.agregar-proyecto label,
+form.agregar-tarea label {
+    color: #fff;
+    flex: 0 0 100px;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+form.agregar-proyecto input[type="text"],
+form.agregar-tarea input[type="text"] {
+    width: 100%;
+    height: 2.4rem;
+    padding-left: 1rem;
+    border: 1px solid #333;
+    border-radius: .3rem;
+    color: black;
+}
+
+form input[type="submit"] {
+    margin-top: 1rem;
+    text-align: center;
+    display: block;
+    padding: 1.3rem;
+    color: black;
+    width: auto;
+    margin: 0;
+}
+
+.contenedor-acciones {
+    max-width: 800px;
+    margin: 2rem auto 0 auto;
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-acciones .boton:first-of-type {
+    color: black;
+    text-decoration: none;
+}
+
+.contenedor-acciones .boton.eliminar {
+    color: white;
+}
+
+.contenedor-acciones .boton {
+    margin: 0;
+    text-align: center;
+    display: block;
+}
